@@ -463,6 +463,35 @@ window.addEventListener("message", function (e) {
   }
 });
 </script>
+<script>
+// Eventos de video de la VSL (Panda) -> Meta Pixel: Play + 25/50/75/100%
+(function () {
+  var fired = {};
+  function once(ev) {
+    if (fired[ev] || !window.fbq) return;
+    fired[ev] = 1;
+    fbq("trackCustom", ev, { content_name: "VSL Abundantes" });
+  }
+  window.addEventListener("message", function (e) {
+    var d = e.data;
+    if (typeof d === "string") { try { d = JSON.parse(d); } catch (_) { d = { message: e.data }; } }
+    if (!d || typeof d !== "object") return;
+    var msg = d.message || d.event || d.type || "";
+    if (typeof msg !== "string") return;
+    if (msg.indexOf("panda_") === 0) msg = msg.slice(6);
+    if (msg === "play" || msg === "playing") once("VideoPlay");
+    if (msg === "ended") { once("VideoProgress25"); once("VideoProgress50"); once("VideoProgress75"); once("VideoProgress100"); }
+    var cur = d.currentTime, dur = d.duration;
+    if ((msg === "timeupdate" || msg === "progress") && cur && dur) {
+      var p = (cur / dur) * 100;
+      if (p >= 25) once("VideoProgress25");
+      if (p >= 50) once("VideoProgress50");
+      if (p >= 75) once("VideoProgress75");
+      if (p >= 98) once("VideoProgress100");
+    }
+  });
+})();
+</script>
 
 </body>
 </html>
