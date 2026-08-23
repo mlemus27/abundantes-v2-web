@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>¡Listo! — Abundantes</title>
+<meta name="robots" content="noindex" />
+<!-- Meta Pixel: PIXEL DE LANZAMIENTOS -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1902425147011077');
+fbq('track','PageView');
+fbq('track','Lead',{content_name:'Llamada de claridad'});
+fbq('track','Schedule',{content_name:'Llamada de claridad'});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1902425147011077&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel -->
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --indigo:#190937; --ink:#0e0520; --orchid:#a580fa; --sky:#60a5fa; --violet:#8b5cf6;
+    --grad:linear-gradient(135deg,#8b5cf6 0%,#60a5fa 100%);
+    --on:#f8f6ff; --muted:#b7add6; --line:rgba(165,128,250,.18);
+    --disp:"Oswald",system-ui,sans-serif; --body:"Manrope",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; min-height:100vh; background:var(--ink); color:var(--on); font-family:var(--body);
+    line-height:1.6; -webkit-font-smoothing:antialiased; display:flex; align-items:center; justify-content:center; text-align:center; overflow-x:hidden}
+  .glow{position:fixed; border-radius:50%; filter:blur(120px); opacity:.4; pointer-events:none; z-index:0}
+  .wrap{position:relative; z-index:2; max-width:640px; padding:40px 24px}
+  .brand img{height:26px; margin-bottom:44px}
+  .check{width:96px; height:96px; margin:0 auto 30px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    background:var(--grad); box-shadow:0 20px 60px rgba(139,92,246,.5)}
+  .check svg{width:48px; height:48px}
+  .eyebrow{font-family:var(--disp); font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--orchid); font-weight:600}
+  h1{font-family:var(--disp); font-weight:700; text-transform:uppercase; letter-spacing:-.01em; line-height:1.02;
+    font-size:clamp(34px,6vw,56px); margin:16px 0 18px; text-wrap:balance}
+  h1 .g{background-image:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent}
+  p.lead{font-size:18px; color:var(--muted); max-width:52ch; margin:0 auto}
+  .steps{list-style:none; padding:0; margin:36px auto 0; max-width:460px; text-align:left; display:flex; flex-direction:column; gap:14px}
+  .steps li{background:rgba(255,255,255,.035); border:1px solid var(--line); border-radius:14px; padding:16px 18px; font-size:15.5px; display:flex; gap:12px; align-items:flex-start}
+  .steps .n{font-family:var(--disp); font-weight:700; color:transparent; background-image:var(--grad); -webkit-background-clip:text; background-clip:text; font-size:20px; line-height:1.2}
+  .note{margin-top:34px; font-size:14px; color:var(--muted)}
+</style>
+</head>
+<body>
+  <div class="glow" style="width:520px;height:520px;background:var(--violet);top:-140px;left:50%;transform:translateX(-50%);opacity:.3"></div>
+  <div class="wrap">
+    <div class="brand"><img src="logo-abundantes.png" alt="Abundantes" /></div>
+    <div class="check">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <span class="eyebrow">Todo listo</span>
+    <h1>Tu llamada quedó <span class="g">agendada.</span></h1>
+    <p class="lead">Gracias por dar el paso. Revisa tu correo: ahí te llega la confirmación con el enlace de la reunión.</p>
+    <ul class="steps">
+      <li><span class="n">1</span><span><b>Confirma en tu correo.</b> Busca el email de Calendly y agrega la reunión a tu calendario.</span></li>
+      <li><span class="n">2</span><span><b>Te escribimos por WhatsApp.</b> Nuestro equipo te contactará para confirmar y preparar tu sesión.</span></li>
+      <li><span class="n">3</span><span><b>Llega con tu caso en mente.</b> En 30 minutos revisamos tu conocimiento y el camino que tiene sentido para ti.</span></li>
+    </ul>
+    <p class="note">Si no ves el correo, revisa spam o promociones.</p>
+  </div>
+</body>
+</html>
