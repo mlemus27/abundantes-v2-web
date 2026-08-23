@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Meta Pixel: PIXEL DE LANZAMIENTOS -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1902425147011077');fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1902425147011077&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel -->
+<title>Abundantes — Tu conocimiento, un sistema que vende por ti</title>
+<meta name="description" content="Construimos tu ecosistema digital completo —equipo humano + inteligencia artificial— para atraer, calificar y agendar clientes mientras tú te dedicas a lo que amas. No es un curso ni una mentoría." />
+<link rel="icon" type="image/png" href="favicon.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Abundantes" />
+<meta property="og:title" content="Tu conocimiento ya vale. Le falta un sistema que venda por ti." />
+<meta property="og:description" content="Ecosistema digital hecho por un equipo humano + IA: oferta, embudo, asistente 24/7, contenido, tráfico y CRM. No es un curso ni una mentoría." />
+<meta property="og:image" content="https://abundantes.felilopez.com/images/felipe-hero.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Tu conocimiento ya vale. Le falta un sistema que venda por ti." />
+<meta name="twitter:description" content="Ecosistema digital hecho por un equipo humano + IA. No es un curso ni una mentoría." />
+<meta name="twitter:image" content="https://abundantes.felilopez.com/images/felipe-hero.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --indigo:#190937; --ink:#0e0520; --ink2:#140a2b;
+    --orchid:#a580fa; --sky:#60a5fa; --violet:#8b5cf6; --accentEnd:#60a5fa;
+    --grad:linear-gradient(135deg,#8b5cf6 0%,#60a5fa 100%);
+    --on:#f8f6ff; --muted:#b7add6; --line:rgba(165,128,250,.18);
+    --card:rgba(255,255,255,.035);
+    --disp:"Oswald",system-ui,sans-serif;
+    --body:"Manrope",system-ui,sans-serif;
+    --wrap:1140px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--ink); color:var(--on); font-family:var(--body);
+    line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  }
+  .wrap{max-width:var(--wrap); margin:0 auto; padding:0 24px}
+  a{color:inherit}
+  section{position:relative}
+
+  .glow{position:absolute; border-radius:50%; filter:blur(90px); opacity:.5; pointer-events:none; z-index:0}
+
+  .eyebrow{font-family:var(--disp); font-size:13px; letter-spacing:.24em; text-transform:uppercase; color:var(--orchid); font-weight:600}
+  .serif-i{background-image:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; font-style:normal; font-weight:inherit}
+
+  h1,h2,h3{font-family:var(--disp); font-weight:600; letter-spacing:-.005em; line-height:1.02; margin:0; text-transform:uppercase}
+  h1{font-size:clamp(38px,6.4vw,74px)}
+  h2{font-size:clamp(30px,4.6vw,50px)}
+  p{margin:0}
+
+  .btn{
+    display:inline-flex; align-items:center; gap:12px; font-family:var(--disp); font-weight:600;
+    font-size:17px; text-transform:uppercase; letter-spacing:.03em; color:#fff; background:var(--grad);
+    padding:18px 34px; border-radius:999px; text-decoration:none; border:0; cursor:pointer;
+    box-shadow:0 14px 40px rgba(139,92,246,.4); transition:transform .18s ease, box-shadow .18s ease, filter .18s ease;
+  }
+  .btn:hover{transform:translateY(-2px); box-shadow:0 20px 54px rgba(139,92,246,.55); filter:brightness(1.06)}
+  .btn:focus-visible{outline:3px solid #fff; outline-offset:3px}
+  .btn .arrow{transition:transform .18s ease}
+  .btn:hover .arrow{transform:translateX(4px)}
+  .cta-note{font-size:14px; color:var(--muted); margin-top:14px}
+
+  nav{position:sticky; top:0; z-index:40; backdrop-filter:blur(12px);
+    background:linear-gradient(180deg,rgba(14,5,32,.85),rgba(14,5,32,.4)); border-bottom:1px solid var(--line)}
+  .nav-in{display:flex; align-items:center; justify-content:space-between; height:66px}
+  .brand{display:inline-flex; align-items:center}
+  .brand img{height:23px; width:auto; display:block}
+  .nav-cta{font-family:var(--disp); font-weight:600; font-size:14px; text-transform:uppercase; letter-spacing:.05em; text-decoration:none; border:1px solid var(--line);
+    padding:10px 18px; border-radius:999px; color:var(--on); transition:border-color .2s, background .2s}
+  .nav-cta:hover{border-color:var(--orchid); background:rgba(165,128,250,.12)}
+
+  .hero{padding:64px 0 40px; overflow:hidden}
+  .hero-grid{display:grid; grid-template-columns:1.05fr .95fr; gap:56px; align-items:center; position:relative; z-index:2}
+  .hero h1{margin:20px 0 0}
+  .hero .sub{color:var(--muted); font-size:19px; max-width:30em; margin:24px 0 32px}
+  .hero-cta-row{display:flex; align-items:center; gap:22px; flex-wrap:wrap}
+  .trust{display:flex; gap:26px; margin-top:40px; flex-wrap:wrap}
+  .trust div{font-size:14px; color:var(--muted)}
+  .trust b{display:block; font-family:var(--disp); font-size:26px; color:var(--on); font-weight:600; letter-spacing:-.02em}
+
+  .vsl{position:relative; justify-self:center; width:100%; max-width:400px}
+  .vsl-frame{position:relative; border-radius:26px; overflow:hidden; border:1px solid rgba(165,128,250,.35);
+    box-shadow:0 40px 100px rgba(0,0,0,.6), 0 0 0 6px rgba(165,128,250,.06); background:#000}
+  .vsl-frame video{display:block; width:100%; height:auto; aspect-ratio:1080/1350; object-fit:cover}
+  .vsl-frame iframe{display:block; width:100%; height:auto; aspect-ratio:1080/1350; border:0}
+  .vsl-tag{position:absolute; top:16px; left:16px; z-index:3; font-family:var(--disp); font-size:12px; font-weight:600;
+    letter-spacing:.14em; text-transform:uppercase; background:rgba(14,5,32,.7); backdrop-filter:blur(6px);
+    padding:8px 14px; border-radius:999px; border:1px solid var(--line); color:var(--orchid)}
+  .vsl-cap{text-align:center; margin-top:16px; font-size:14px; color:var(--muted)}
+
+  .band{padding:96px 0; border-top:1px solid var(--line)}
+  .lead{color:var(--muted); font-size:18px; max-width:44ch; margin:22px 0 0}
+  .center{text-align:center; margin-left:auto; margin-right:auto}
+
+  .shift-grid{display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:48px}
+  .shift-card{background:var(--card); border:1px solid var(--line); border-radius:20px; padding:32px}
+  .shift-card .k{font-family:var(--disp); font-weight:600; text-transform:uppercase; letter-spacing:.03em; font-size:22px; color:var(--muted)}
+  .shift-card.good .k{background-image:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .shift-card ul{list-style:none; padding:0; margin:18px 0 0}
+  .shift-card li{padding:9px 0 9px 30px; position:relative; color:var(--on); font-size:16.5px; border-top:1px solid rgba(255,255,255,.05)}
+  .shift-card li:first-child{border-top:0}
+  .shift-card li::before{content:""; position:absolute; left:2px; top:17px; width:9px; height:9px; border-radius:50%}
+  .shift-card.bad li::before{background:#6b6480}
+  .shift-card.good li::before{background:var(--orchid); box-shadow:0 0 12px var(--orchid)}
+
+  .eco{position:relative; margin:60px auto 0; max-width:960px}
+  .eco-core{position:relative; z-index:3; width:268px; height:268px; margin:0 auto}
+  .eco-core svg{position:absolute; inset:0; width:100%; height:100%; overflow:visible; display:block}
+  .eco-core .lbl{position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; font-family:var(--disp); font-weight:600; font-size:21px; line-height:1.1; letter-spacing:.04em; text-transform:uppercase;
+    color:var(--on); z-index:2; text-shadow:0 2px 24px rgba(8,3,22,.8), 0 0 40px rgba(124,77,219,.35)}
+  .eco-sheen{transform-origin:120px 120px; animation:eco-spin 11s linear infinite}
+  .eco-halo{transform-origin:120px 120px; animation:eco-breathe 6.5s ease-in-out infinite}
+  .eco-glide{offset-rotate:0deg}
+  .eco-g1{offset-path:path("M 26,120 a 94,33 0 1,1 188,0 a 94,33 0 1,1 -188,0"); animation:eco-travel 15s linear infinite}
+  .eco-g2{offset-path:path("M 40,120 a 80,28 0 1,0 160,0 a 80,28 0 1,0 -160,0"); animation:eco-travel 21s linear infinite; animation-direction:reverse}
+  @keyframes eco-spin{to{transform:rotate(360deg)}}
+  @keyframes eco-travel{to{offset-distance:100%}}
+  @keyframes eco-breathe{0%,100%{opacity:.5; transform:scale(1)} 50%{opacity:.92; transform:scale(1.045)}}
+  @media (prefers-reduced-motion: reduce){ .eco-sheen,.eco-halo,.eco-glide{animation:none} }
+  .nodes{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:34px}
+  .node{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px 20px; transition:transform .2s, border-color .2s, background .2s; text-align:left}
+  .node:hover{transform:translateY(-4px); border-color:var(--orchid); background:rgba(165,128,250,.08)}
+  .node .n{font-family:var(--disp); font-size:12px; color:var(--orchid); font-weight:600; letter-spacing:.12em}
+  .node h3{font-size:20px; margin:10px 0 8px; font-weight:600}
+  .node p{font-size:15px; color:var(--muted)}
+
+  .t-rowh{display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:48px}
+  .t-rowv{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:22px}
+  .tcard{background:var(--card); border:1px solid var(--line); border-radius:20px; overflow:hidden; display:flex; flex-direction:column; transition:transform .2s, border-color .2s}
+  .tcard:hover{transform:translateY(-4px); border-color:var(--orchid)}
+  .tvid{position:relative; background:#000; width:100%}
+  .tvid.h{aspect-ratio:16/9}
+  .tvid.v{aspect-ratio:9/16}
+  .tvid iframe{position:absolute; inset:0; width:100%; height:100%; border:0}
+  .tbody{padding:24px; display:flex; flex-direction:column; flex:1}
+  .ttag{font-family:var(--disp); font-size:10px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--orchid)}
+  .tquote{font-family:var(--body); font-weight:500; font-size:18px; line-height:1.45; margin:10px 0 16px; color:var(--on)}
+  .twho{margin-top:auto; font-family:var(--disp); font-weight:600; font-size:15px; border-top:1px solid var(--line); padding-top:14px}
+  .twho span{display:block; color:var(--muted); font-weight:400; font-size:13px; font-family:var(--body)}
+
+  .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:48px; counter-reset:s}
+  .step{background:var(--card); border:1px solid var(--line); border-radius:20px; padding:30px; position:relative}
+  .step::before{counter-increment:s; content:"0" counter(s); font-family:var(--disp); font-size:44px; font-weight:700;
+    color:transparent; -webkit-text-stroke:1.5px var(--orchid); display:block; margin-bottom:14px}
+  .step h3{font-size:20px; margin-bottom:8px}
+  .step p{color:var(--muted); font-size:15.5px}
+  .scarcity{margin-top:34px; text-align:center; color:var(--muted); font-size:15px}
+  .scarcity b{color:var(--on); font-weight:600}
+
+  .disq{background:linear-gradient(180deg,var(--ink2),var(--ink)); border:1px solid var(--line); border-radius:24px; padding:48px; margin-top:8px}
+  .disq h2 span{background-image:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .disq ul{list-style:none; padding:0; margin:24px 0 0; display:grid; grid-template-columns:1fr 1fr; gap:12px}
+  .disq li{color:var(--muted); font-size:16px; padding-left:26px; position:relative}
+  .disq li::before{content:"—"; position:absolute; left:0; color:#6b6480}
+
+  .agenda-sec{padding:30px 0 100px; text-align:center}
+  .cal-card{margin-top:10px; border-radius:22px; overflow:hidden; border:1px solid var(--line);
+    background:#1a0d33; box-shadow:0 30px 80px rgba(0,0,0,.42)}
+  .final{text-align:center; padding:110px 0 70px}
+  .final h2{max-width:16ch; margin-left:auto; margin-right:auto; margin-bottom:10px}
+  .badge{display:inline-block; font-family:var(--disp); font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--muted); border:1px solid var(--line); padding:8px 16px; border-radius:999px; margin-bottom:22px}
+
+  footer{border-top:1px solid var(--line); padding:38px 0; color:var(--muted); font-size:13.5px; text-align:center}
+  .foot-links{margin-top:16px; display:flex; gap:22px; justify-content:center; flex-wrap:wrap}
+  .foot-links a{font-family:var(--disp); text-transform:uppercase; letter-spacing:.06em; font-size:12px; color:var(--muted); text-decoration:none; transition:color .2s}
+  .foot-links a:hover{color:var(--orchid)}
+
+  @media (max-width:860px){
+    .hero-grid{grid-template-columns:1fr; gap:40px}
+    .vsl{order:-1; max-width:340px}
+    .shift-grid,.nodes,.t-rowh,.t-rowv,.steps,.disq ul{grid-template-columns:1fr}
+    .tvid.v{max-width:320px;margin:0 auto}
+    .band{padding:72px 0}
+    .disq{padding:32px}
+  }
+  @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="brand" href="#" aria-label="Abundantes"><img src="logo-abundantes.png" alt="Abundantes" /></a>
+    <a class="nav-cta" href="#agenda">Agendar llamada</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="glow" style="width:520px;height:520px;background:var(--violet);top:-160px;left:-120px"></div>
+  <div class="glow" style="width:420px;height:420px;background:var(--sky);top:120px;right:-140px;opacity:.35"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Para médicos, coaches y consultores con conocimiento valioso</span>
+      <h1>Tu conocimiento ya vale.<br>Le falta un sistema que<br>venda <span class="serif-i">por ti.</span></h1>
+      <p class="sub">Construimos tu ecosistema digital completo —equipo humano + inteligencia artificial— para atraer, calificar y agendar clientes mientras tú te dedicas a lo que amas.</p>
+      <div class="hero-cta-row">
+        <a class="btn" href="#agenda">Agenda tu llamada de 30 minutos <span class="arrow">→</span></a>
+      </div>
+      <p class="cta-note">30 minutos · sin costo · revisamos tu caso con honestidad</p>
+      <div class="trust">
+        <div><b>Equipo + IA</b>Hecho por nosotros, no por ti</div>
+        <div><b>Sin curso</b>No es una mentoría</div>
+        <div><b>Tu voz</b>Sin grabar todos los días</div>
+      </div>
+    </div>
+    <div class="vsl">
+      <div class="vsl-frame">
+        <span class="vsl-tag">▶ Míralo en 6 min</span>
+        <iframe src="https://player-vz-d2e616d4-07c.tv.pandavideo.com/embed/?v=e0f9fd72-5076-4d32-b02c-c4cbe19d8d1d" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen title="VSL Abundantes — Felipe López"></iframe>
+      </div>
+      <p class="vsl-cap">Felipe López te explica cómo funciona</p>
+    </div>
+  </div>
+</header>
+
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow">El verdadero problema</span>
+    <h2 style="margin-top:16px; max-width:18ch">No necesitas trabajar más. Necesitas dejar de ser el <span class="serif-i">cuello de botella.</span></h2>
+    <p class="lead">No es que la mentoría estuviera mal. Es que aprender diez disciplinas técnicas —pauta, embudos, edición, automatización— mientras atiendes tu negocio, no es realista. Y armar tu propio equipo son sobrecostos que ahogan antes de la primera venta.</p>
+    <div class="shift-grid">
+      <div class="shift-card bad">
+        <div class="k">Hoy</div>
+        <ul>
+          <li>Dependes de estar presente para facturar</li>
+          <li>Persigues prospectos entre consulta y consulta</li>
+          <li>Contratas, capacitas y lidias con un equipo</li>
+          <li>Aprendes tutoriales a las 11 de la noche</li>
+        </ul>
+      </div>
+      <div class="shift-card good">
+        <div class="k">Con Abundantes</div>
+        <ul>
+          <li>Un sistema vende y agenda por ti, 24/7</li>
+          <li>Un asistente IA califica y responde como si fueras tú</li>
+          <li>Un equipo humano ejecuta todo el ecosistema</li>
+          <li>Tú vuelves a tu zona de genialidad</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" style="text-align:center">
+  <div class="glow" style="width:600px;height:600px;background:var(--orchid);top:40%;left:50%;transform:translate(-50%,-50%);opacity:.14"></div>
+  <div class="wrap" style="position:relative;z-index:2">
+    <span class="eyebrow">Lo que construimos por ti</span>
+    <h2 style="margin-top:16px" class="center">Un solo ecosistema, <span class="serif-i">ya coordinado.</span></h2>
+    <p class="lead center">Todo gira alrededor de una sola cosa: tu conocimiento.</p>
+    <div class="eco">
+      <div class="eco-core" role="img" aria-label="Tu conocimiento: el núcleo del ecosistema">
+        <svg viewBox="0 0 240 240" aria-hidden="true">
+          <defs>
+            <radialGradient id="ecoCore" cx="42%" cy="34%" r="72%">
+              <stop offset="0%" stop-color="#f4eeff"/>
+              <stop offset="16%" stop-color="#cbb0ff"/>
+              <stop offset="42%" stop-color="#8b5cf6"/>
+              <stop offset="74%" stop-color="#3c1c7d"/>
+              <stop offset="100%" stop-color="#180a38"/>
+            </radialGradient>
+            <radialGradient id="ecoHalo" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(176,142,255,.55)"/>
+              <stop offset="52%" stop-color="rgba(109,128,250,.15)"/>
+              <stop offset="100%" stop-color="rgba(25,9,55,0)"/>
+            </radialGradient>
+            <radialGradient id="ecoShadow" cx="50%" cy="72%" r="55%">
+              <stop offset="0%" stop-color="rgba(8,3,26,.55)"/>
+              <stop offset="100%" stop-color="rgba(8,3,26,0)"/>
+            </radialGradient>
+            <linearGradient id="ecoSheen" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+              <stop offset="0%" stop-color="rgba(226,211,255,0)"/>
+              <stop offset="50%" stop-color="#e8dcff"/>
+              <stop offset="100%" stop-color="rgba(226,211,255,0)"/>
+            </linearGradient>
+            <linearGradient id="ecoRim" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="rgba(244,238,255,.85)"/>
+              <stop offset="100%" stop-color="rgba(244,238,255,0)"/>
+            </linearGradient>
+            <filter id="ecoSoft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6"/></filter>
+            <filter id="ecoBlurArc" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="1.6"/></filter>
+            <filter id="ecoPip" x="-500%" y="-500%" width="1100%" height="1100%">
+              <feGaussianBlur stdDeviation="2.6" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+
+          <circle class="eco-halo" cx="120" cy="120" r="120" fill="url(#ecoHalo)"/>
+
+          <!-- planos orbitales inclinados -->
+          <g transform="rotate(24 120 120)">
+            <ellipse cx="120" cy="120" rx="94" ry="33" fill="none" stroke="rgba(176,142,255,.24)" stroke-width="1"/>
+            <circle class="eco-glide eco-g1" cx="0" cy="0" r="2.9" fill="#c9b3ff" filter="url(#ecoPip)"/>
+          </g>
+          <g transform="rotate(-22 120 120)">
+            <ellipse cx="120" cy="120" rx="80" ry="28" fill="none" stroke="rgba(109,128,250,.22)" stroke-width="1"/>
+            <circle class="eco-glide eco-g2" cx="0" cy="0" r="2.3" fill="#8ea0ff" filter="url(#ecoPip)"/>
+          </g>
+
+          <!-- anillo exterior + barrido de luz -->
+          <circle cx="120" cy="120" r="106" fill="none" stroke="rgba(176,142,255,.12)" stroke-width="1"/>
+          <g class="eco-sheen">
+            <circle cx="120" cy="120" r="106" fill="none" stroke="url(#ecoSheen)" stroke-width="2.4"
+              stroke-linecap="round" stroke-dasharray="118 549" filter="url(#ecoBlurArc)"/>
+          </g>
+
+          <!-- núcleo esférico -->
+          <circle cx="120" cy="120" r="62" fill="#7c4ddb" opacity=".42" filter="url(#ecoSoft)"/>
+          <circle cx="120" cy="120" r="55" fill="url(#ecoCore)"/>
+          <circle cx="120" cy="120" r="55" fill="url(#ecoShadow)"/>
+          <circle cx="120" cy="120" r="44" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="1"/>
+          <path d="M 68 120 A 52 52 0 0 1 172 120" fill="none" stroke="url(#ecoRim)" stroke-width="1.4" stroke-linecap="round"/>
+          <ellipse cx="103" cy="95" rx="26" ry="16" fill="rgba(255,255,255,.20)" filter="url(#ecoSoft)"/>
+          <circle cx="96" cy="88" r="3" fill="rgba(255,255,255,.65)" filter="url(#ecoBlurArc)"/>
+        </svg>
+        <span class="lbl">Tu<br>conocimiento</span>
+      </div>
+      <div class="nodes">
+        <div class="node"><div class="n">OFERTA</div><h3>Oferta Hi-Ticket</h3><p>Diseñamos y empaquetamos tu conocimiento para que el mercado lo quiera comprar.</p></div>
+        <div class="node"><div class="n">EMBUDO</div><h3>Embudo de conversión</h3><p>Con mediciones en tiempo real para subir la conversión y decidir con datos.</p></div>
+        <div class="node"><div class="n">ASISTENTE IA</div><h3>Agenda 24/7</h3><p>Un asistente IA que califica prospectos y los agenda por WhatsApp, como si fueras tú.</p></div>
+        <div class="node"><div class="n">CONTENIDO</div><h3>Contenido con IA</h3><p>Agentes que escriben tus reels y carruseles sin que grabes todos los días.</p></div>
+        <div class="node"><div class="n">TRÁFICO</div><h3>Trafficker dedicado</h3><p>Maneja y optimiza tu pauta con aprendizaje basado en IA, 24/7.</p></div>
+        <div class="node"><div class="n">CRM</div><h3>Todo sincronizado</h3><p>CRM, calendarios y alertas conectados y listos para crecer.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow">Ya lo viven</span>
+    <h2 style="margin-top:16px">Profesionales que volvieron a su <span class="serif-i">zona de genialidad.</span></h2>
+    <p style="max-width:640px;margin-top:16px;color:var(--muted);font-size:17px">No son actores ni casos hipotéticos. Son expertos que ya construyeron su ecosistema con Felipe y el equipo — en sus propias palabras.</p>
+
+    <div class="t-rowh">
+      <div class="tcard">
+        <div class="tvid h"><iframe src="https://player-vz-d2e616d4-07c.tv.pandavideo.com/embed/?v=b8d159c1-4859-4e59-a7e9-1b81386a820c" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Testimonio de Mónica Londoño"></iframe></div>
+        <div class="tbody">
+          <span class="ttag">Resultados rápidos</span>
+          <p class="tquote">«Para mí ha sido una luz en el camino.»</p>
+          <div class="twho">Mónica Londoño<span>Master Coach · Programación Neurolingüística</span></div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tvid h"><iframe src="https://player-vz-d2e616d4-07c.tv.pandavideo.com/embed/?v=5110e323-f6a5-451c-97a0-258127286238" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Testimonio de Pablo D'Angelo"></iframe></div>
+        <div class="tbody">
+          <span class="ttag">Profesionalización digital</span>
+          <p class="tquote">«Si quieren hacer algo de verdad, como nosotros que somos empresarios, hay que hacerlo con gente experta.»</p>
+          <div class="twho">Pablo D'Angelo<span>Director · Bramante Editorial e Instituto</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="t-rowv">
+      <div class="tcard">
+        <div class="tvid v"><iframe src="https://player-vz-d2e616d4-07c.tv.pandavideo.com/embed/?v=4fbcedd7-1078-4813-b6dd-fe67bef14142" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Testimonio de Mauricio López"></iframe></div>
+        <div class="tbody">
+          <span class="ttag">Resultados rápidos</span>
+          <p class="tquote">«Por fin pude crear mi proyecto digital, un sueño que tenía hace mucho tiempo.»</p>
+          <div class="twho">Mauricio López<span>Comunicador Social</span></div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tvid v"><iframe src="https://player-vz-d2e616d4-07c.tv.pandavideo.com/embed/?v=d2493973-7685-4487-94e4-1212fe48cfa8" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Testimonio de Jair Valencia"></iframe></div>
+        <div class="tbody">
+          <span class="ttag">Descubrimiento</span>
+          <p class="tquote">«Descubrí algo que me voló la cabeza.»</p>
+          <div class="twho">Jair Valencia<span>Pastor y Emprendedor</span></div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tvid v"><iframe src="https://player-vz-d2e616d4-07c.tv.pandavideo.com/embed/?v=b956dba1-6416-4b34-9b1e-8d67ec897ded" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Testimonio de Bertha Núñez"></iframe></div>
+        <div class="tbody">
+          <span class="ttag">Aplicación práctica</span>
+          <p class="tquote">«Lo más importante es que nos hacías que lo aplicáramos al momento.»</p>
+          <div class="twho">Bertha Núñez<span>Coach de Vida</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow">Cómo empieza</span>
+    <h2 style="margin-top:16px">Una llamada. Sin rodeos.</h2>
+    <div class="steps">
+      <div class="step"><h3>Agenda</h3><p>Contestas 10 preguntas —te toma 3 minutos— y nuestro equipo te escribe por WhatsApp para confirmar.</p></div>
+      <div class="step"><h3>Revisamos tu caso</h3><p>En 30 minutos vemos tu situación y te decimos con honestidad cuál es el camino que tiene sentido para ti.</p></div>
+      <div class="step"><h3>Armamos tu sistema</h3><p>Si encaja, nuestro equipo de tecnología construye tu ecosistema completo y lo pone a producir.</p></div>
+    </div>
+    <p class="scarcity">Como es un sistema de <b>implementación total</b>, asignamos un cupo con el equipo de tecnología y la agenda se llena a medida que llegan los clientes.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="disq">
+      <span class="eyebrow">Sé honesto contigo</span>
+      <h2 style="margin-top:16px">Esto <span>no es para todos.</span></h2>
+      <ul>
+        <li>Si buscas cursos baratos</li>
+        <li>Si quieres aprender a hacerlo todo tú mismo</li>
+        <li>Si solo estás explorando</li>
+        <li>Si no tienes un conocimiento que ya transforme vidas</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="final" id="cierre">
+  <div class="glow" style="width:520px;height:520px;background:var(--violet);top:10%;left:50%;transform:translateX(-50%);opacity:.3"></div>
+  <div class="wrap" style="position:relative;z-index:2">
+    <span class="badge">Cupos limitados por mes</span>
+    <h2>Tu conocimiento no tiene techo.<br>La forma en que lo miras, <span class="serif-i">sí.</span></h2>
+    <p class="lead center" style="margin:18px auto 32px">Y eso lo puedes cambiar hoy. Agenda tu llamada y volvamos a poner tu tiempo donde importa.</p>
+    <a class="btn" href="#agenda">Agenda tu llamada de 30 minutos <span class="arrow">→</span></a>
+    <p class="cta-note">30 minutos · sin costo · sin compromiso</p>
+  </div>
+</section>
+
+<section class="agenda-sec" id="agenda">
+  <div class="wrap">
+    <span class="eyebrow">Da el primer paso</span>
+    <h2 style="margin-top:14px">Elige tu horario para la <span class="serif-i">llamada de claridad.</span></h2>
+    <p class="lead center" style="margin:16px auto 30px;max-width:58ch">Son 30 minutos, sin costo y sin compromiso. Revisamos tu caso con honestidad y te decimos si Abundantes es para ti.</p>
+    <div class="cal-card">
+      <!-- Principio del widget integrado de Calendly -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/felipe-lopez-atodamaquina/llamada-estrategica-abundantes-clon-1?hide_gdpr_banner=1&background_color=1a0d33&text_color=f8f6ff&primary_color=a580fa" style="min-width:320px;height:700px;"></div>
+      <!-- Final del widget integrado de Calendly -->
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Abundantes · Felipe López — Equipo humano + IA. No es un curso ni una mentoría: es implementación hecha por un equipo.
+    <div class="foot-links">
+      <a href="https://abundantes.felilopez.com/politica-privacidad">Política de privacidad</a>
+      <a href="https://abundantes.felilopez.com/terminos">Términos</a>
+      <a href="https://abundantes.felilopez.com/aviso-legal">Aviso legal</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Calendly -->
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script>
+// Dispara Lead en Meta Pixel cuando se agenda una llamada en Calendly
+window.addEventListener("message", function (e) {
+  if (e.data && e.data.event === "calendly.event_scheduled" && window.fbq) {
+    fbq("track", "Lead", { content_name: "Llamada de claridad" });
+  }
+});
+</script>
+
+</body>
+</html>
