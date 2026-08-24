@@ -460,6 +460,7 @@ fbq('init','1902425147011077');fbq('track','PageView');
 window.addEventListener("message", function (e) {
   if (e.data && e.data.event === "calendly.event_scheduled" && window.fbq) {
     fbq("track", "Lead", { content_name: "Llamada de claridad" });
+    fbq("trackCustom", "CalendlyBookingComplete", { content_name: "Llamada de claridad" });
   }
 });
 </script>
@@ -475,18 +476,18 @@ window.addEventListener("message", function (e) {
   function mark(cur) {
     if (!vidDur || !cur) return;
     var p = (cur / vidDur) * 100;
-    if (p >= 25) once("VideoProgress25");
-    if (p >= 50) once("VideoProgress50");
-    if (p >= 75) once("VideoProgress75");
-    if (p >= 95) once("VideoProgress100");
+    if (p >= 25) once("VSL_25pct");
+    if (p >= 50) once("VSL_50pct");
+    if (p >= 75) once("VSL_75pct");
+    if (p >= 95) once("VSL_Complete");
   }
   window.addEventListener("message", function (e) {
     var d = e.data;
     if (typeof d === "string") { try { d = JSON.parse(d); } catch (_) { return; } }
     if (!d || typeof d !== "object") return;
     var msg = d.message || "";
-    if (msg === "panda_play") once("VideoPlay");
-    if (msg === "panda_ended") { once("VideoProgress25"); once("VideoProgress50"); once("VideoProgress75"); once("VideoProgress100"); }
+    if (msg === "panda_play") once("VSL_Play");
+    if (msg === "panda_ended") { once("VSL_25pct"); once("VSL_50pct"); once("VSL_75pct"); once("VSL_Complete"); }
     if (msg === "panda_allData" && d.playerData) {
       if (d.playerData.duration > 0) vidDur = d.playerData.duration;
       mark(d.playerData.currentTime);
